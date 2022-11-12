@@ -17,6 +17,7 @@ nosso filmes favoritos, contendo a classificação(rating), tag, título e descr
 - [x] Cadastro de Nota
 - [x] Pesquisa por título da nota.
 - [x] Atualização das informações do usuário.
+- [] Responsividade
 
 ## Layout 🎨
 <a href="https://rocketmovieson.netlify.app/">
