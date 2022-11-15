@@ -13,7 +13,6 @@ export function Home() {
 
   //Não tem funcionalidade de tags selecionadas ainda.
   const [tagsSelected, setTagsSelected] = useState([])
-
   const navigate = useNavigate()
 
   function handleNote(id) {
@@ -40,15 +39,14 @@ export function Home() {
             <TextButton title="Adicionar Filme" icon={FiPlus} to="/new" />
           </div>
 
-          <Section>
-            
-            {notes.map(note => (
+          <Section>    
+            {notes ? notes.map(note => (
                 <NoteMovie 
                   key={String(note.id)}
                   data={note}
                   onClick={() => handleNote(note.id)}
                 />
-              ))}
+              )) : <p>Crie sua primeira anotação</p>}
 
           </Section>  
         </Content> 
