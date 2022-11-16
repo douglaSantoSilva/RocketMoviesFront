@@ -14,13 +14,13 @@ export function SignIn(){
   const [email, setEmail] = useState()
   const [password, setPassword] = useState()
 
-  function handleSignIn() {
+  async function handleSignIn() {
 
     if(!email || !password) {
       return alert("Digite o e-mail e a senha.")
     }
 
-    signIn({email, password})
+   await signIn({email, password})
   }
 
   return(
